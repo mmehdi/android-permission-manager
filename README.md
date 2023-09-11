@@ -1,3 +1,24 @@
+#UPDATE- using Activity
+
+
+Use
+```PermissionManagerActivity.kt
+```
+
+in your Acitivity add this:
+
+```kotlin
+   override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        permissionManager?.onRequestPermissionsResult(requestCode,permissions,grantResults)
+    }
+```
+
+
 # A clean approach to deal with Permissions in Android
 
 This small project shows a clean and simplified approach for the recommended workflow for requesting permissions in Android.
