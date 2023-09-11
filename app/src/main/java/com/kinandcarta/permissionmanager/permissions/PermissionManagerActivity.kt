@@ -32,6 +32,7 @@ class PermissionManagerActivity(private val activity: Activity) {
         var i =0
        permissions.forEach {
            map.put(it,if(grantResults[i]==0) true else false)
+           i++
        }
 
         sendResultAndCleanUp(map)
