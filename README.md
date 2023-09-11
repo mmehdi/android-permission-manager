@@ -1,9 +1,8 @@
-#UPDATE- using Activity
+# UPDATE- using Activity
 
 
-Use
-```PermissionManagerActivity.kt
-```
+Use the permission manager:
+```PermissionManagerActivity.kt```
 
 in your Acitivity add this:
 
