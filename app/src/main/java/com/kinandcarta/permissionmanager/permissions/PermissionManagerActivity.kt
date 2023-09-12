@@ -29,11 +29,9 @@ class PermissionManagerActivity(private val activity: Activity) {
                                     grantResults: IntArray){
 
         val map = mutableMapOf<String,Boolean>()
-        var i =0
-       permissions.forEach {
-           map.put(it,if(grantResults[i]==0) true else false)
-           i++
-       }
+
+        for ((index, value) in permissions.withIndex())
+            map.put(value,if(grantResults[index]==0) true else false)
 
         sendResultAndCleanUp(map)
     }
