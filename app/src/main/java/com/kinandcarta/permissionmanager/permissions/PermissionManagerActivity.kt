@@ -57,6 +57,11 @@ class PermissionManagerActivity(private val activity: Activity) {
         return this
     }
 
+    fun checkDetailedPermission(callback: (Map<Permission,Boolean>) -> Unit) {
+        this.detailedCallback = callback
+        handlePermissionRequest()
+    }
+
     private fun handlePermissionRequest() {
         activity.let { activity ->
             when {
