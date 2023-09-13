@@ -1,4 +1,4 @@
-# UPDATE- using Activity
+# UPDATE 13/09/2023 - using Activity
 
 
 Use the permission manager:
@@ -16,6 +16,11 @@ in your Acitivity add this:
         permissionManager?.onRequestPermissionsResult(requestCode,permissions,grantResults)
     }
 ```
+
+
+
+
+
 
 
 # A clean approach to deal with Permissions in Android
